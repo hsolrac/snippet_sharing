@@ -43,7 +43,7 @@ defmodule SnippetShareWeb.Layouts do
         <div>
           <input
             type="text"
-            class="rounded-lg focus:outline-none focus:border-emLavender focus:ring-0 px-3 py-1 bg-emDark-dark placeholder-emDark-light text-white font-brand font-regular text-sm mr-5 border-white"
+            class="rounded-lg focus:outline-none focus:border-emLavender focus:ring-0 px-3 py-1 bg-emDark-dark placeholder-emDark-light text-white font-brand font-regular text-sm mr-5 border border-white"
             placeholder="Search..."
           />
           <button class="mt-2 mr-2 text-white text-[1rem] font-brand font-bold hover:text-emDark-light">
@@ -54,18 +54,26 @@ defmodule SnippetShareWeb.Layouts do
 
       <div class="relative">
         <button class="img-down-arror" type="button" id="user-menu-button">
-          <img src="" alt="Profile Image" class="round-image-padding w-8 h-8" />
+          <img src="" class="round-image-padding w-8 h-8" />
         </button>
       </div>
     </header>
 
     <main class="px-4 py-20 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl space-y-4">
+      <div class="mx-auto space-y-4">
         {render_slot(@inner_block)}
       </div>
     </main>
-
     <.flash_group flash={@flash} />
+    <footer class="h-[120px] w-full flex justify-content text-white px-16 py-20">
+      <div class="w-full px-10">
+        <div class="border-t-[1px] border-white w-full"></div>
+        <div class="flex items-center space-x-2 py-6">
+          <img src="" alt="logo" class="h-8 w-8" />
+          <p>© 2025 Carlos Henrique</p>
+        </div>
+      </div>
+    </footer>
     """
   end
 
