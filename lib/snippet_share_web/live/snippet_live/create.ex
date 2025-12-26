@@ -25,8 +25,8 @@ defmodule SnippetShareWeb.SnippetLive.Create do
           <div class="justify-center px-28 w-full space-y-4 mb-10">
             <.input field={@form[:description]} placeholder="Gist description.." autocomplete="off" />
             <div>
-              <div class="flex p-2 items-center bg-emDark rounded-t-md border">
-                <div class="w-[300px] mb-2">
+              <div class="flex p-1 items-center bg-emDark rounded-t-md border h-16">
+                <div class="items-center w-[300px] mb-2">
                   <.input
                     field={@form[:name]}
                     placeholder="Filename including extension..."
