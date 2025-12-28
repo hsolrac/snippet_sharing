@@ -1,4 +1,4 @@
-# SnippetShare
+# Snippet Share
 
 To start your Phoenix server:
 
